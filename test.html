@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a=new Number()
+			var b=new String()
+			var d=new Object()
+			var c=new Boolean()
+			var f=new Function()
+			console.log(a.__proto__)
+			console.log(b.__proto__)
+			console.log(c.__proto__)
+			console.log(d .__proto__)
+			console.log(f.prototype,f.__proto__)
+			console.log(a.toString(),c.toString())
+			// console.log(a.concat())
+			//这里报错了就是说明这个方法并不适用于我们的number类型,这个方法只存在于我们的字符串类型中.
+// 			每种数据类型都是有着其相对应的特殊方法存在的.比如说Number的toFixed方法这种
+// 			而这每种数据类型又有着一些公用的方法,也就是我们的object.__proto__
+// 			在这个方法里存放着我们这几种数据类型所共有的方法
+			// 比如说toString,还有valueOf这些方法都是公用的
+			
+// 			Object.prototype 就是所有对象以及数据类型的共有方法,但是这个是什么生成的.
+// 			适合数据类型的方法一样,由浏览器生成的吗？
+// 			在js中,没有被引用的方法全部都会被垃圾回收掉,那么这个方法是怎么生成的？
+// 			这个才是关键.
+			
+			// 所以是js一开始就生成了所有数据类型的prototype吗？
+
+
+
+			// var e=Symbol()
+// 			var g=null
+// 			var h=undefined
+			
+		</script>
+	</body>
+</html>
